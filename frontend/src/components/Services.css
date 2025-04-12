@@ -1,0 +1,20 @@
+.services-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .service-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #fff;
+  }
+  .service-card h2 {
+    margin-bottom: 0.5rem;
+  }
+  

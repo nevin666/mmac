@@ -1,0 +1,202 @@
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .quiz-container h1 {
+    text-align: center;
+    color: #e75480;
+    margin-bottom: 30px;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #e75480;
+    transition: width 0.3s ease;
+  }
+  
+  .question-counter {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .question-container h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+  
+  .option-button {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+  }
+  
+  .option-button:hover:not([disabled]) {
+    background-color: #f9f0f5;
+    border-color: #e75480;
+  }
+  
+  .option-button.correct {
+    background-color: #e6f7e6;
+    border-color: #4caf50;
+    color: #2e7d32;
+  }
+  
+  .option-button.incorrect {
+    background-color: #ffebee;
+    border-color: #f44336;
+    color: #c62828;
+  }
+  
+  .explanation-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .explanation-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .explanation-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .next-button, .restart-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #e75480;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .next-button:hover, .restart-button:hover {
+    background-color: #d64d7a;
+  }
+  
+  .results-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e75480;
+    margin: 20px 0;
+  }
+  
+  .score-message {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .dashboard-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-container {
+      padding: 15px;
+    }
+    
+    .question-container h2 {
+      font-size: 18px;
+    }
+    
+    .option-button {
+      padding: 12px;
+      font-size: 14px;
+    }
+    /* Add these styles to your MenstruationQuiz.css file */
+.quiz-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .quiz-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .back-to-dashboard {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .back-to-dashboard:hover {
+    color: #e84393;
+  }
+  
+  .results-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+
+  }

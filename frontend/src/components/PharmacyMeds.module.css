@@ -1,0 +1,142 @@
+.pharmaciesContainer {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.headingContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainHeading {
+  font-size: 2em;
+  color: #007acc;
+  margin: 0;
+}
+
+.subHeading {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.pharmaciesIntro {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.pharmaciesCategories {
+  margin-bottom: 20px;
+}
+
+.category-button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.2s;
+}
+
+.category-button.active,
+.category-button:hover {
+  background-color: #007acc;
+  color: #fff;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 0 #ccc;
+  background-color: #fff;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 4px 0 #007acc, 0 0 5px rgba(0, 122, 204, 0.3);
+  transform: translateY(-2px);
+}
+
+.searchInput:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #007acc, 0 0 8px rgba(0, 122, 204, 0.2);
+}
+
+.pharmaciesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.pharmacyCard {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.pharmacyCard:hover {
+  transform: translateY(-3px);
+}
+
+.pharmacyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pharmacyName {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #007acc;
+}
+
+.pharmacyAddress,
+.pharmacyPhone,
+.pharmacyEmail,
+.pharmacyContact,
+.pharmacyHours {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.viewDetailsButton {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9em;
+  transition: background-color 0.2s;
+}
+
+.viewDetailsButton:hover {
+  background-color: #005fa3;
+}
+
+.pharmaciesDisclaimer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border-left: 4px solid #007acc;
+}

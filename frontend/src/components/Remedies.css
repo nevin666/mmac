@@ -1,0 +1,272 @@
+/* Remedies Page Styling */
+.remedies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.remedies-container h1 {
+  text-align: center;
+  color: #e75480;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.remedies-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Category Filters */
+.remedies-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #f9e0e8;
+}
+
+.category-button.active {
+  background-color: #e75480;
+  color: white;
+}
+
+/* Remedy Cards */
+.remedies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.remedy-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.remedy-card:hover {
+  transform: translateY(-5px);
+}
+
+.remedy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.remedy-header h2 {
+  font-size: 22px;
+  margin: 0;
+  color: #333;
+  flex: 1;
+}
+
+.remedy-category-tag {
+  background-color: rgba(231, 84, 128, 0.1);
+  color: #e75480;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.remedy-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.view-details-button {
+  background-color: transparent;
+  color: #e75480;
+  border: 2px solid #e75480;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.view-details-button:hover {
+  background-color: #e75480;
+  color: white;
+}
+
+/* Expanded Remedy Details */
+.remedy-details {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+}
+
+.remedy-steps, .remedy-precautions {
+  margin-bottom: 25px;
+}
+
+.remedy-steps h3, .remedy-precautions h3, .remedy-video h3 {
+  color: #e75480;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.remedy-steps ol {
+  padding-left: 20px;
+}
+
+.remedy-steps li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.remedy-precautions p {
+  background-color: #fef5f7;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #e75480;
+  color: #444;
+}
+
+/* Video Section */
+.video-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.video-placeholder {
+  background-color: #f0f0f0;
+  background-image: linear-gradient(45deg, #f9f0f5, #f0f0f0);
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.video-info {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-title {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.watch-button {
+  display: inline-block;
+  background-color: #e75480;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #d04570;
+}
+
+/* Disclaimer */
+.remedy-disclaimer {
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border-left: 5px solid #e75480;
+}
+
+.remedy-disclaimer h3 {
+  color: #e75480;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.remedy-disclaimer p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .remedies-container h1 {
+    font-size: 2rem;
+  }
+  
+  .remedies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .remedy-card {
+    max-width: 100%;
+  }
+  
+  .remedy-header {
+    flex-direction: column;
+  }
+  
+  .remedy-category-tag {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .remedies-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .remedies-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .remedies-intro {
+    font-size: 16px;
+  }
+  
+  .remedy-header h2 {
+    font-size: 20px;
+  }
+}
