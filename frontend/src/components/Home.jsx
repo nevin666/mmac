@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './CycleSense.css';
+import './Home.css';
 import './Chatbot.css';
 
-function CycleSense() {
+function Home() {
   const [openFaq, setOpenFaq] = useState(null);
   const navigate = useNavigate();
 
@@ -772,4 +772,4 @@ function Chatbot() {
   );
 }
 
-export default CycleSense;
+export default Home;

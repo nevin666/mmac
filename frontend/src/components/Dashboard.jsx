@@ -32,11 +32,13 @@ import {
   faSpinner,
   faAppleAlt,
   faSync,
-  faHospital
+  faHospital,
+  faMessage
 } from '@fortawesome/free-solid-svg-icons';
 import './Dashboard.css';
 import PeriodTrackerForm from './PeriodTrackerForm';
 import axios from 'axios';
+import Chatbot from './Chatbot';
 
 const Dashboard = ({ isAuthenticated, setIsAuthenticated }) => {
   // Rename "cycleData" to "diagnosisData" to store symptom info
@@ -198,6 +200,9 @@ const Dashboard = ({ isAuthenticated, setIsAuthenticated }) => {
   const navigateToPharmacies = () => {
     navigate('/pharmacies');
   };
+  const navigateToChatbot = () => {
+    navigate('/dashboard/chatbot');
+  };
 
   // Safely calculate diagnosis info and next check-up date
   const diagnosisInfo = diagnosisData ? calculateDiagnosis() : { prediction: 'No Data', advice: '' };
@@ -240,6 +245,11 @@ const Dashboard = ({ isAuthenticated, setIsAuthenticated }) => {
                 {/* Sidebar */}
                 <div className="sidebar">
                   <ul className="sidebar-menu">
+                  <li>
+                      <Link to="/dashboard/chatbot" onClick={navigateToChatbot}>
+                        <FontAwesomeIcon icon={faMessage} /> Chatbot
+                      </Link>
+                    </li>
                     <li>
                       <Link to="/remedies" onClick={navigateToremedies}>
                         <FontAwesomeIcon icon={faHome} /> Remedies
